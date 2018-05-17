@@ -2,8 +2,10 @@ from max_refresh import max_refresh
 # Comment examples you need to see/hide
 # Python >=3.3, for <3.3 check __init__.py
 
-""" Short:
-
+""" Shorter:
+    Let's say you've got a method that you really shouldn't use too frequently.
+    
+    Short:
     @max_refresh serves as a simple read-update (observer) design pattern on
     a function it decorates. It takes string and double as 'key' and 'timeout'
     arguments.
