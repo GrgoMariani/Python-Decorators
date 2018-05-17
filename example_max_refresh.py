@@ -4,7 +4,7 @@ from max_refresh import max_refresh
 
 """ Short:
 
-    max_refresh serves as a simple read-update (observer) design pattern on
+    @max_refresh serves as a simple read-update (observer) design pattern on
     a function it decorates. It takes string and double as 'key' and 'timeout'
     arguments.
     
