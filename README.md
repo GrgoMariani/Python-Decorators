@@ -2,7 +2,7 @@
 
 ### FAQ
 
-A list of helpful selfmade Python decorators.
+A list of helpful self-made Python decorators.
 Might be helpful while thinking about some design patterns you could use in your next project.
 
 ```
