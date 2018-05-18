@@ -1,40 +1,42 @@
-from set_arguments import set_arguments, set_function
+from change import change_args, change_function
 
 """ Shorter:
-    Do you want to always call your function with some specific arguments,
-    or maybe call another function instead using the same arguments.
-         (very useful while testing)
+        Do you want to always call your function with some specific arguments,
+        or maybe call another function instead using the same arguments.
+            (very useful while testing)
     
     Short:
-    @set_arguments(*args, **kwargs) discards the arguments someone might pass
-    to decorated function and sets given arguments as the only arguments
-    
-    @set_function(function) calls another function instead of this one
-    
+        @change_args(*args, **kwargs) discards the arguments someone might pass
+            to decorated function and sets given arguments as the only arguments
+        @change_function(function) calls another function instead of this one 
+            using the same arguments
 """
+
 
 def add_function_1(x, y):
     print("Add function 1")
     result = x+y
-    print('{} + {} = {}'.format(x, y, result) )
+    print('{} + {} = {}'.format(x, y, result))
 
 
-@set_arguments(2, 3)
+@change_args(2, 3)
 def add_function_2(x, y):
     print("Add function 2")
     result = x+y
-    print('{} + {} = {}'.format(x, y, result) )
+    print('{} + {} = {}'.format(x, y, result))
+
 
 def multiply(x, y):
     print("Multiply")
     result = x*y
-    print('{} * {} = {}'.format(x, y, result) )
+    print('{} * {} = {}'.format(x, y, result))
 
-@set_function(multiply)
+
+@change_function(multiply)
 def add_function_3(x, y):
     print("Add function 3")
     result = x+y
-    print('{} + {} = {}'.format(x, y, result) )
+    print('{} + {} = {}'.format(x, y, result))
 
 
 add_function_1(10, 11)
