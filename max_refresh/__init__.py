@@ -5,6 +5,7 @@ __all__ = ["max_refresh"]
 # and replace stopwatch() with one of the answers
 
 import time
+from functools import wraps
 
 stopwatches = dict()
 oldresults = dict()
@@ -19,6 +20,7 @@ def stopwatch():
 
 def max_refresh(key: str, timeout):
     def wrapper2(func):
+        @wraps(func)
         def wrapper(*args, **kwargs):
             if key in stopwatches:
                 if stopwatch()-stopwatches[key] < timeout:

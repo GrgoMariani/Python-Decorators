@@ -1,8 +1,10 @@
 __all__ = ["ternary", "ternary_call"]
+from functools import wraps
 
 
 def ternary(return_value_true, return_value_false):
     def wrapper2(func):
+        @wraps(func)
         def wrapper(*args, **kwargs):
             result = func(*args, **kwargs)
             if result:
@@ -14,6 +16,7 @@ def ternary(return_value_true, return_value_false):
 
 def ternary_call(func_true, func_false):
     def wrapper2(func):
+        @wraps(func)
         def wrapper(*args, **kwargs):
             result = func(*args, **kwargs)
             if result:

@@ -36,7 +36,7 @@ def second():
 # Each function will be executed at most once until timeout is reached
 while True:
     first()
-    second() 
+    second()
 """  -------------------------------SECOND EXAMPLE-------------------------------------------- """
 
 
@@ -67,4 +67,5 @@ def returnAsArray(integer):
 b = 0
 while True:
     b = increment1(b)
-    print(str(b) + " " + str(returnAsArray(b)))
+    print("{} {}".format(b, returnAsArray(b)))
+
