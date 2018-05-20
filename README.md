@@ -23,6 +23,9 @@ A fun way to emulate the command line in under 50 lines of code. Try it!
 ## Conditional
 The decorator that executes the given function only if the condition is met.
 
+## DFA
+Deterministic Finite Automaton Emulator. At least a really simple one.
+
 ## For Each Elem
 A nice programming pattern for simplyfing operations on all elements of a list.
 

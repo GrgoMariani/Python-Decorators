@@ -2,6 +2,9 @@ from for_each_elem import for_each_elem
 """ Shorter:
         Let's say you have a list that always contains the same items. When changing all the items in the list
             it makes sense to make a decorator that accesses all items for you and passes all the results as a list. 
+        Also, please remember.
+        This is a neat way to play around with decorators, but in the real world scenario I would advise using 
+            generators.
 
     Short:
         @for_each_elem(list) decorates a function and takes a list as an argument. Then it takes each item of the list
