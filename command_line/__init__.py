@@ -24,6 +24,6 @@ def execute_command(command: str):
 
 
 @register_command('--help')
-def help():
+def __help():
     for command in commands:
         print("'{}' calls {}()".format(command, commands[command].__name__))
