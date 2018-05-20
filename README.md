@@ -23,6 +23,9 @@ A fun way to emulate the command line in under 50 lines of code. Try it!
 ## Conditional
 The decorator that executes the given function only if the condition is met.
 
+## For Each Elem
+A nice programming pattern for simplyfing operations on all elements of a list.
+
 ## Max Refresh
 I should really get a better name for this. Best to check the example.
 
@@ -33,4 +36,4 @@ Prints the function, it's arguments and result. Really helpful for debugging.
 Emulates a giant stack on which to put results that can be taken care of later.
 
 ## Ternary
-I really miss this C/C++ operator
+A slightly different take on ternary operator

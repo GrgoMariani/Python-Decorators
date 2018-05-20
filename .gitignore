@@ -102,3 +102,4 @@ ENV/
 .idea/Python-Decorators.iml
 .idea/vcs.xml
 .idea/workspace.xml
+*.xml

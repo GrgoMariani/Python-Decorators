@@ -3,6 +3,7 @@ from ternary import ternary, ternary_call
 """ Shorter:
         There is an operator in C/C++ called ternary.
             (checkSomething) ? do_this_if_something_was_true : do_this_if_it_was_false
+        in Python it goes like this 'do_this if something_true else do_something_else'
 
     Short:
         @ternary_call(func_when_result_true, func_when_result_false) automatically calls the function
