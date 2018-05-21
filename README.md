@@ -1,9 +1,11 @@
 # Python Decorators
 
-### FAQ
+#### Description
 
 A list of helpful self-made Python decorators.
 Might be helpful while thinking about some design patterns you could use in your next project.
+
+All code and examples are made to run on Python 3.3+
 
 ```
 @use_this_decorator
@@ -25,6 +27,9 @@ The decorator that executes the given function only if the condition is met.
 
 ## DFA
 Deterministic Finite Automaton Emulator. A really simplified one, at least.
+
+## do in main thread
+Executes the given function in the main thread
 
 ## For Each Elem
 A nice programming pattern for simplyfing operations on all elements of a list.
