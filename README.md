@@ -29,7 +29,7 @@ The decorator that executes the given function only if the condition is met.
 Deterministic Finite Automaton Emulator. A really simplified one, at least.
 
 ## do in main thread
-Executes the given function in the main thread
+Executes the given function in the main thread.
 
 ## For Each Elem
 A nice programming pattern for simplyfing operations on all elements of a list.
