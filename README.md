@@ -16,6 +16,9 @@ def on_this_function():
 ## Analyze
 A group of helpful decorators for debugging and optimizing your code. Decorate your functions to keep track of how many times you call them and how long their execution takes.
 
+## BDD tests
+A short take on Behaviour Driven Development testing
+
 ## Change
 Decorators that change the function or it's input arguments. Or both.
 
@@ -30,9 +33,6 @@ Deterministic Finite Automaton Emulator. A really simplified one, at least.
 
 ## do in main thread
 Executes the given function in the main thread.
-
-## For Each Elem
-A nice programming pattern for simplyfing operations on all elements of a list.
 
 ## Max Refresh
 I should really get a better name for this. Best to check the example.

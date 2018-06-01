@@ -7,9 +7,7 @@ def register_command(command: str):
     def wrapper(func):
         if command in commands:
             print("Command '{}' already taken | Overwriting".format(command))
-            commands[command] = func
-        else:
-            commands[command] = func
+        commands[command] = func
         return func
     return wrapper
 
